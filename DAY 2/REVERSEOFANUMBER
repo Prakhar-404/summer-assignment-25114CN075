@@ -8,9 +8,9 @@ int main() {
     cin >> num;
 
     while(num > 0) {
-        digit = num % 10;              // last digit nikalega
-        reverse = reverse * 10 + digit; // reverse banega
-        num = num / 10;               // last digit hat jayegi
+        digit = num % 10;              
+        reverse = reverse * 10 + digit; 
+        num = num / 10;               
     }
 
     cout << "Reverse number = " << reverse;
