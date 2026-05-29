@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+    int num, digit, reverse = 0;
+
+    cout << "Enter a number: ";
+    cin >> num;
+
+    while(num > 0) {
+        digit = num % 10;              // last digit nikalega
+        reverse = reverse * 10 + digit; // reverse banega
+        num = num / 10;               // last digit hat jayegi
+    }
+
+    cout << "Reverse number = " << reverse;
+
+    return 0;
+}
